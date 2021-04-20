@@ -22,7 +22,7 @@ class App extends Component {
     return (
       <>
         <Layout>
-         
+        {this.props.isLoadingContact && Loader()}
           <h1>Phonebook</h1>
 
           <ContactForm addToContacts={this.addToContacts} />
@@ -30,7 +30,7 @@ class App extends Component {
           <h2>Contacts</h2>
 
           <Filter />
-          {this.props.isLoadingContact && Loader()}
+  
           <TaskList
          
           />

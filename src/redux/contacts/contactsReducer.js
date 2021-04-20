@@ -1,5 +1,6 @@
 import { combineReducers } from "redux";
 import { createReducer } from "@reduxjs/toolkit";
+
 import {
   contactRequest,
   contactSuccess,
@@ -50,5 +51,4 @@ export default combineReducers({
   contacts,
   filter,
   isLoadind,
- 
 });
